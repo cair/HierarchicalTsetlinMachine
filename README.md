@@ -2,6 +2,8 @@
 Tsetlin machine-based learning of AND-OR hierarchies
 
 ## Licence
+MIT License
+
 Copyright (c) 2026 Ole-Christoffer Granmo and the University of Agder 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
