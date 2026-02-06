@@ -149,7 +149,7 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 A clause component is updated exactly as a standard clause, apart from a few crucial changes:
 
 <p align="center">
-  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Nested_Clause_Votes.png">
+  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_I_Feedback.png">
 </p>
 
 **Type I Feedback (Target Class)**
