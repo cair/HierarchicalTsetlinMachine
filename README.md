@@ -1,6 +1,6 @@
 # Hierarchical Tsetlin Machine
 
-This repository proposes how Tsetlin machines can learn AND-OR hierarchies (work in progress).
+This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 
 ## Tsetlin Machines and Human-Level AI - An Eight Year Research Agenda
 
