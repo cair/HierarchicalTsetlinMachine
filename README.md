@@ -9,8 +9,8 @@ Tsetlin machine-based learning of AND-OR hierarchies
 
 CAIR aims to create a new route to Artificial General Intelligence (AGI) based on logical learning and scientific reasoning. This involves developing
 radical methodologies and theories that revitalize decades of research in logic-based and causal inference,
-including experiment design, while advancing machine learning capabilities to the DL/LLM-level and beyond.
-To this end, HAI will devise a new class of inductive logic programming founded on the Tsetlin machine paradigm, and
+including experiment design, while advancing machine learning capabilities to the Deep Learning/LLM-level and beyond.
+To this end, CAIR will devise a new class of inductive logic programming founded on the Tsetlin machine paradigm, and
 then develop a framework for reflective reasoning that leverages the up-scaled pattern recognition capability of
 Tsetlin machines. The resulting AGI methodology will profoundly change the research landscape and the impact of AI.
 
