@@ -118,7 +118,11 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 ### Inference in Hierarchies
 
+Inference is exactly as for vanilla Tsetlin machine, except for clause evaluation...
+
 ### Learning in Hierarchies
+
+A clause component is updated exactly as a standard clause, apart from...
 
 ### Further Work
 
