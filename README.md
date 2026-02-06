@@ -19,6 +19,25 @@ Tsetlin machines. The resulting AGI methodology will profoundly change the resea
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Six_Research_Challenges.png">
 </p>
 
+Although logical learning in Tsetlin Machines performs remarkably similar to multilayer neural networks and recent TM advances show that they can
+provide superior pattern recognition accuracy in complex tasks, the symbolic-symbolic route
+to AGI crosses six unchartered research challenges (C1-C6 in the above figure):
+* __C1 Conceptualization.__ We need knowledge on how logical learning of symbolic representations can repli-
+cate and move beyond the inductive biases of DL/LLMs, ultimately surpassing human-level reactive thinking.
+* __C2 Introspection.__ We need to understand how various aspects of human introspection, including self-
+assessment, can be modeled symbolically with appropriate algorithmic and theoretical underpinnings.
+* __C3 Transparency.__ We need to discover how to build the steps towards AGI so that every step can be
+understood like engineers understand an airplane, enabling safety standards comparable to those in aviation.
+* __C4 Lifelong learning.__ We need knowledge of the modeling, algorithms, and theory required for lifelong
+symbolic-symbolic learning of knowledge, skills, and reflexes from human-like interactions with the world.
+* __C5 Generalization.__ We need to uncover how to go beyond the data and build “laws-of-nature” (a scientific
+world model) in a way that supports the solution to the other HAI challenges.
+* __C6 Reactive and reflective thinking.__ We need knowledge on how to integrate the reactive thinking of C1
+with the reflective reasoning of C5, and how to coordinate these two modes through introspection (C2). We also
+need to understand how lifelong learning (C4) can be incorporated into both reactive and reflective thinking,
+for example, turning recurring reflective thinking patterns into reactive patterns for speed and automation.
+
+
 
 ## The Noisy Parity Problem
 
