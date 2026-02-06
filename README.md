@@ -19,7 +19,7 @@ Tsetlin machines. The resulting AGI methodology will profoundly change the resea
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Six_Research_Challenges.png">
 </p>
 
-Although logical learning in Tsetlin Machines performs remarkably similar to multilayer neural networks and recent TM advances show that they can
+Although logical learning in Tsetlin Machines performs remarkably similar to multilayer neural networks and recent Tsetlin Machine advances show that they can
 provide superior pattern recognition accuracy in complex tasks, the symbolic-symbolic route
 to AGI crosses six unchartered research challenges (C1-C6 in the above figure):
 * __C1 Conceptualization.__ We need knowledge on how logical learning of symbolic representations can repli-
