@@ -127,7 +127,7 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 </p>
 
 <p align="center">
-  <img width="30%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Clause_Evaluation_II.png">
+  <img width="40%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Clause_Evaluation_II.png">
 </p>
 
 #### Scaling Up
