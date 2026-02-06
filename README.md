@@ -81,7 +81,7 @@ The methods introduced in this repository aims to address challenge C1 above. By
 ### Key Learning Aspect
 
 <p align="center">
-  <img width="40%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Key_Learning_Aspect.png">
+  <img width="20%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Key_Learning_Aspect.png">
 </p>
 
 ## Learning AND-OR Hierarchies With Nested Clauses
