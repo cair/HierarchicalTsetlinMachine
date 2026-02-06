@@ -1,4 +1,4 @@
-# Hierarchical TsetlinMachine
+# Hierarchical Tsetlin Machine
 
 This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 
