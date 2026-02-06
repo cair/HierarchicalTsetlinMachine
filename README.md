@@ -15,6 +15,11 @@ To this end, CAIR will devise a new class of inductive logic programming founded
 then develop a framework for reflective reasoning that leverages the up-scaled pattern recognition capability of
 Tsetlin machines. The resulting AGI methodology will profoundly change the research landscape and the impact of AI._
 
+<p align="center">
+  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Six_Research_Challenges.png">
+</p>
+
+
 ## The Noisy Parity Problem
 
 ## Vanilla Tsetlin Machine Solution to the Noisy Parity Problem
