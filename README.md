@@ -104,13 +104,13 @@ The methods introduced in this repository aims to address challenge C1 above. By
   <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Alternatives.png">
 </p>
 
-#### OR-structure for Organizing Alternatives
+#### OR-Structure for Organizing Alternatives
 
 <p align="center">
   <img width="30%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_OR_Structure.png">
 </p>
 
-#### AND-structure for combining feature groups
+#### AND-Structure for combining feature groups
 
 <p align="center">
   <img width="50%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_AND_Structure.png">
