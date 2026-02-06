@@ -37,7 +37,7 @@ with the reflective reasoning of C5, and how to coordinate these two modes throu
 need to understand how lifelong learning (C4) can be incorporated into both reactive and reflective thinking,
 for example, turning recurring reflective thinking patterns into reactive patterns for speed and automation.
 
-The methods introduced in this repository aims to address challenge C1 above. By introucing AND-OR hierarchies, we will enable the construction of high-level concepts, moving Tsetlin Machines decisively beyond flat AND-rules.
+The methods introduced in this repository aim to address challenge C1 above. By introucing AND-OR hierarchies, we will enable the construction of high-level concepts, moving Tsetlin Machines decisively beyond flat AND-rules.
 
 ## The Noisy Parity Problem
 
