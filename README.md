@@ -1,5 +1,6 @@
-# HierarchicalTsetlinMachine
-Tsetlin machine-based learning of AND-OR hierarchies
+# Hierarchical TsetlinMachine
+
+This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 
 ## Tsetlin Machines and Human-Level AI - An Eight Year Research Agenda
 
