@@ -41,6 +41,10 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 ## The Noisy Parity Problem
 
+<p align="center">
+  <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Noisy_Parity_Problem.png">
+</p>
+
 ## Vanilla Tsetlin Machine Solution to the Noisy Parity Problem
 
 ## Learning AND-OR Hierarchies With Nested Clauses
