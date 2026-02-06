@@ -72,6 +72,12 @@ The methods introduced in this repository aims to address challenge C1 above. By
   <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Clauses.png">
 </p>
 
+### Target Model
+
+<p align="center">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Target_Model.png">
+</p>
+
 ## Learning AND-OR Hierarchies With Nested Clauses
 
 ### Hierarchical Clause Structure
