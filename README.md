@@ -1,7 +1,7 @@
 # HierarchicalTsetlinMachine
 Tsetlin machine-based learning of AND-OR hierarchies
 
-## Tsetlin Machine and AGI
+## Tsetlin Machines and Human-Level AI
 
 ### Bridging Reactive and Reflective Thinking
 
