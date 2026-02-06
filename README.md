@@ -153,6 +153,7 @@ A clause component is updated exactly as a standard clause, apart from a few cru
 </p>
 
 **Type I Feedback (Target Class)**
+
 1. Record truth value of all AND-sub-expressions from leaf (clause component) to root (clause)
 2. Update clause component based on truth values:
   1. If all AND-sub-expressions on path are True → Give Type Ia feedback to clause component
