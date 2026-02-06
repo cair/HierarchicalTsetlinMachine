@@ -11,9 +11,9 @@ This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 _CAIR aims to create a new route to Artificial General Intelligence (AGI) based on logical learning and scientific reasoning. This involves developing
 radical methodologies and theories that revitalize decades of research in logic-based and causal inference,
 including experiment design, while advancing machine learning capabilities to the Deep Learning (DL)/LLM-level and beyond.
-To this end, CAIR will devise a new class of inductive logic programming founded on the Tsetlin machine paradigm, and
+To this end, CAIR will devise a new class of inductive logic programming founded on the Tsetlin Machine paradigm, and
 then develop a framework for reflective reasoning that leverages the up-scaled pattern recognition capability of
-Tsetlin machines. The resulting AGI methodology will profoundly change the research landscape and the impact of AI._
+Tsetlin Machines. The resulting AGI methodology will profoundly change the research landscape and the impact of AI._
 
 <p align="center">
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Six_Research_Challenges.png">
