@@ -77,12 +77,13 @@ int main(void)
 		clock_t end_total = clock();
 		double time_used = ((double) (end_total - start_total)) / CLOCKS_PER_SEC;
 
-		printf("EPOCH %d TIME: %f\n", i+1, time_used);
+		printf("RUN %d TIME: %f\n", i+1, time_used);
 		float accuracy = mc_tm_evaluate(mc_tsetlin_machine, X_test, y_test, NUMBER_OF_EXAMPLES);
 		accuracy_sum += accuracy;
 
 		printf("Accuracy: %f\n", accuracy);
 		printf("Average accuracy: %f\n", accuracy_sum/(i+1));
+		printf("\n");
 	}
 
 	return 0;
