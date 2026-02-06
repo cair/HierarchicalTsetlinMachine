@@ -101,7 +101,7 @@ The methods introduced in this repository aims to address challenge C1 above. By
 #### Alternatives
 
 <p align="center">
-  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Leaves.png">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Leaves.png">
 </p>
 
 ### Inference in Hierarchies
