@@ -122,6 +122,14 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 
 #### Clause Evaluation
 
+<p align="center">
+  <img width="50%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Clause_Evaluation_I.png">
+</p>
+
+<p align="center">
+  <img width="50%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Clause_Evaluation_II.png">
+</p>
+
 #### Scaling Up
 
 ### Learning in Hierarchies
