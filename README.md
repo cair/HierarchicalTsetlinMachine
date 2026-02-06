@@ -104,12 +104,17 @@ The methods introduced in this repository aims to address challenge C1 above. By
   <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Alternatives.png">
 </p>
 
+#### OR-structure for Organizing Alternatives
+
+<p align="center">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_OR_Structure.png">
+</p>
+
 ### Inference in Hierarchies
 
 ### Learning in Hierarchies
 
 ### Further Work
-
 
 * Full implementation in PyTsetlinMachineCUDA, TMU, PyTsetlinMachine, and GraphTsetlinMachine
 * Reuse/sharing of clause components
