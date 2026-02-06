@@ -5,7 +5,7 @@ This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 ## Tsetlin Machines and Human-Level AI - An Eight Year Research Agenda
 
 <p align="center">
-  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Symbolic_Symbolic_Tsetlin_Machine_AGI.png">
+  <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Symbolic_Symbolic_Tsetlin_Machine_AGI.png">
 </p>
 
 _CAIR aims to create a new route to Artificial General Intelligence (AGI) based on logical learning and scientific reasoning. This involves developing
