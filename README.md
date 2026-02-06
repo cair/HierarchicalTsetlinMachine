@@ -2,7 +2,7 @@
 
 This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 
-## Tsetlin Machines and Human-Level AI - An Eight Year Research Agenda
+## Tsetlin Machines and Human-Level AI
 
 <p align="center">
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Symbolic_Symbolic_Tsetlin_Machine_AGI.png">
