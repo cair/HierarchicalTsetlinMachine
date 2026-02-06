@@ -25,7 +25,7 @@ https://arxiv.org/abs/1804.01508
 
 */
 
-#define THRESHOLD 3000
+#define THRESHOLD 1500
 #define LEAF_FACTORS 3
 #define INTERIOR_FACTORS 2
 #define ROOT_FACTORS 2
