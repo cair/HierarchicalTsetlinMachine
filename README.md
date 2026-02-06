@@ -146,7 +146,16 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 
 ### Learning in Hierarchies
 
-A clause component is updated exactly as a standard clause, apart from...
+A clause component is updated exactly as a standard clause, apart from a few crucial changes:
+
+<p align="center">
+  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Nested_Clause_Votes.png">
+</p>
+
+**Type I Feedback (Target Class)**
+1. Record truth value of all AND-sub-expressions from leaf (clause component) to root (clause)
+2. a. If all AND-sub-expressions on path are True → Give Type Ia feedback to clause component
+   b. Otherwise, give it Type Ib feedback
 
 ### Further Work
 
