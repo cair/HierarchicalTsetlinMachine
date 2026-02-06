@@ -41,16 +41,27 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 ## The Noisy Parity Problem
 
+### Noise
 <p align="center">
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Noisy_Parity_Problem.png">
 </p>
+
+### Non-Linearity
 
 <p align="center">
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Noisy_Parity_Problem_Non_Linearity.png">
 </p>
 
+### Abstraction
+
 <p align="center">
   <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Noisy_Parity_Problem_Abstraction.png">
+</p>
+
+### Generalization
+
+<p align="center">
+  <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Noisy_Parity_Problem_Generalization.png">
 </p>
 
 ## Vanilla Tsetlin Machine Solution to the Noisy Parity Problem
