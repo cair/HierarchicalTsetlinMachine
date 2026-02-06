@@ -10,7 +10,7 @@ This repository proposes how Tsetlin machines can learn AND-OR hierarchies.
 
 _CAIR aims to create a new route to Artificial General Intelligence (AGI) based on logical learning and scientific reasoning. This involves developing
 radical methodologies and theories that revitalize decades of research in logic-based and causal inference,
-including experiment design, while advancing machine learning capabilities to the Deep Learning/LLM-level and beyond.
+including experiment design, while advancing machine learning capabilities to the Deep Learning (DL)/LLM-level and beyond.
 To this end, CAIR will devise a new class of inductive logic programming founded on the Tsetlin machine paradigm, and
 then develop a framework for reflective reasoning that leverages the up-scaled pattern recognition capability of
 Tsetlin machines. The resulting AGI methodology will profoundly change the research landscape and the impact of AI._
@@ -37,7 +37,7 @@ with the reflective reasoning of C5, and how to coordinate these two modes throu
 need to understand how lifelong learning (C4) can be incorporated into both reactive and reflective thinking,
 for example, turning recurring reflective thinking patterns into reactive patterns for speed and automation.
 
-
+The methods introduced in this repository aims to address challenge C1 above. By introucing AND-OR hierarchies, we will enable the construction of high-level concepts, moving Tsetlin Machines decisively beyond flat AND-rules.
 
 ## The Noisy Parity Problem
 
