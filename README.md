@@ -132,6 +132,10 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 
 #### Scaling Up
 
+<p align="center">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Complex_Alternatives.png">
+</p>
+
 ### Learning in Hierarchies
 
 A clause component is updated exactly as a standard clause, apart from...
