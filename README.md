@@ -112,6 +112,10 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 #### AND-structure for combining feature groups
 
+<p align="center">
+  <img width="30%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_OR_Structure.png">
+</p>
+
 ### Inference in Hierarchies
 
 ### Learning in Hierarchies
