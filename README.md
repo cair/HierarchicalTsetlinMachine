@@ -4,7 +4,7 @@ Tsetlin machine-based learning of AND-OR hierarchies
 ## Tsetlin Machines and Human-Level AI - An Eight Year Research Agenda
 
 <p align="center">
-  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/master/figures/Symbolic_Symbolic_Tsetlin_Machine_AGI.png">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Symbolic_Symbolic_Tsetlin_Machine_AGI.png">
 </p>
 
 CAIR aims to create a new route to Artificial General Intelligence (AGI) based on logical learning and scientific reasoning. This involves developing
