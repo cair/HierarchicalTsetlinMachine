@@ -66,6 +66,12 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 ## Vanilla Tsetlin Machine Solution to the Noisy Parity Problem
 
+### Clauses
+
+<p align="center">
+  <img width="90%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Clauses.png">
+</p>
+
 ## Learning AND-OR Hierarchies With Nested Clauses
 
 ### Hierarchical Clause Structure
