@@ -149,15 +149,25 @@ Inference is exactly as for vanilla Tsetlin machine, except for clause evaluatio
 A clause component is updated exactly as a standard clause, apart from a few crucial changes:
 
 <p align="center">
-  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_I_Feedback.png">
+  <img width="70%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_I_Feedback.png">
 </p>
 
 **Type I Feedback (Target Class)**
 
-1. Record truth value of all AND-sub-expressions from leaf (clause component) to root (clause)
+1. Record truth value of all AND-sub-expressions from leaf (**clause component**) to root (**clause**)
 2. Update clause component based on truth values:
-   * If all AND-sub-expressions on path are True → Give Type Ia feedback to clause component
-   * Otherwise, give it Type Ib feedback
+   * If all AND-sub-expressions on path are _True_ → Give **Type Ia Feedback** to clause component
+   * Otherwise, give it **Type Ib Feedback**
+
+**Type II Feedback (Other Classes)**
+
+<p align="center">
+  <img width="70%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_I_Feedback.png">
+</p>
+
+1. Record truth value of all AND-sub-expressions from leaf (**clause component**) to root (**clause**)
+2. Update clause component based on truth values:
+   * If all AND-sub-expressions on path are _True_ → Give **Type II Feedback** to clause component
 
 ### Further Work
 
