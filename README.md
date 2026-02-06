@@ -31,7 +31,7 @@ understood like engineers understand an airplane, enabling safety standards comp
 * __C4 Lifelong learning.__ We need knowledge of the modeling, algorithms, and theory required for lifelong
 symbolic-symbolic learning of knowledge, skills, and reflexes from human-like interactions with the world.
 * __C5 Generalization.__ We need to uncover how to go beyond the data and build “laws-of-nature” (a scientific
-world model) in a way that supports the solution to the other HAI challenges.
+world model) in a way that supports the solution to the other challenges.
 * __C6 Reactive and reflective thinking.__ We need knowledge on how to integrate the reactive thinking of C1
 with the reflective reasoning of C5, and how to coordinate these two modes through introspection (C2). We also
 need to understand how lifelong learning (C4) can be incorporated into both reactive and reflective thinking,
