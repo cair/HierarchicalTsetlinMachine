@@ -144,6 +144,35 @@ A clause component is updated exactly as a standard clause, apart from...
 * Proof of concept applications (image understanding, natural language understanding, signal processing, etc.)
 * Theoretical analysis
 
+### Demo
+
+```bash
+make
+gcc -Wall -O3 -ffast-math -o NoisyParityDemo NoisyParityDemo.c MultiClassTsetlinMachine.c TsetlinMachine.c
+
+python3 ./NoisyParityData.py
+
+./NoisyParityDemo
+
+RUN 1 TIME: 850.848964
+Accuracy: 0.988850
+Average accuracy: 0.988850
+
+RUN 2 TIME: 868.053936
+Accuracy: 0.998850
+Average accuracy: 0.993850
+
+RUN 3 TIME: 840.775647
+Accuracy: 0.995350
+Average accuracy: 0.994350
+
+...
+
+RUN 10 TIME: 803.521219
+Accuracy: 0.992700
+Average accuracy: 0.994970
+```
+
 ### Paper
 
 _A Tsetlin Machine for Logical Learning and Reasoning With AND-OR Hierarchies_. Ole-Christoffer Granmo, et al., 2026. (Forthcoming)
