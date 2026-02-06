@@ -120,6 +120,10 @@ The methods introduced in this repository aims to address challenge C1 above. By
 
 Inference is exactly as for vanilla Tsetlin machine, except for clause evaluation...
 
+#### Clause Evaluation
+
+#### Scaling Up
+
 ### Learning in Hierarchies
 
 A clause component is updated exactly as a standard clause, apart from...
