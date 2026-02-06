@@ -257,12 +257,8 @@ void tm_update(struct TsetlinMachine *tm, int Xi[], int target, float s) {
 
 	for (int i = 0; i < CLAUSES; i++) {
 		for (int j = 0; j < ROOT_FACTORS; j++) {
-			//int k = rand() % INTERIOR_ALTERNATIVES; // Pick a random subtree
-
 			for (int k = 0; k < INTERIOR_ALTERNATIVES; k++) {
 				for (int l = 0; l < INTERIOR_FACTORS; l++) {
-					//int m = rand() % LEAF_ALTERNATIVES; // Pick a random clause component
-
 					for (int m = 0; m < LEAF_ALTERNATIVES; m++) {
 						if ((*tm).feedback_to_components[i][j][k][l][m] > 0) {
 							type_i_feedback(tm, Xi, i, j, k, l, m, s);
