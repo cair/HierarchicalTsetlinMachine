@@ -75,7 +75,7 @@ The methods introduced in this repository aims to address challenge C1 above. By
 ### Target Model
 
 <p align="center">
-  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Target_Model.png">
+  <img width="40%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Target_Model.png">
 </p>
 
 ## Learning AND-OR Hierarchies With Nested Clauses
@@ -87,6 +87,13 @@ The methods introduced in this repository aims to address challenge C1 above. By
 ### Learning in Hierarchies
 
 ### Further Work
+
+
+* Full implementation in PyTsetlinMachineCUDA, TMU, PyTsetlinMachine, and GraphTsetlinMachine
+* Reuse/sharing of clause components
+* Flexible architecture composition (1D, 2D, 3D, graphs, ...)
+* Proof of concept applications (image understanding, natural language understanding, signal processing, etc.)
+* Theoretical analysis
 
 ### Paper
 
