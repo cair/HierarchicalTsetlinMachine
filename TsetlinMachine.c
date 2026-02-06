@@ -166,7 +166,6 @@ int tm_get_state(struct TsetlinMachine *tm, int clause, int root_factor, int int
 static inline void type_i_feedback(struct TsetlinMachine *tm, int Xi[], int i, int j, int k, int l, int m, float s)
 {
 	if ((*tm).clause_output[i] == 0 || (*tm).interior_vote_products[i][j][k] == 0 || (*tm).clause_component_output[i][j][k][l][m] == 0)	{
-//	if ((*tm).clause_output[i] == 0 || (*tm).clause_component_output[i][j][k][l][m] == 0) {
 		for (int n = 0; n < LEAF_FACTORS; n++) {
 			(*tm).ta_state[i][j][k][l][m][n] -= ((*tm).ta_state[i][j][k][l][m][n] > 1) && (1.0*rand()/RAND_MAX <= 1.0/s);	
 
@@ -200,7 +199,6 @@ static inline void type_ii_feedback(struct TsetlinMachine *tm, int Xi[], int i, 
 	int action_include;
 
 	if ((*tm).clause_output[i] > 0 && (*tm).interior_vote_products[i][j][k] > 0 && (*tm).clause_component_output[i][j][k][l][m] == 1) {
-//	if ((*tm).clause_output[i] > 0 && (*tm).clause_component_output[i][j][k][l][m] == 1) {
 		int feature_index = j * INTERIOR_FACTORS * LEAF_FACTORS + l * LEAF_FACTORS;
 
 		for (int n = 0; n < LEAF_FACTORS; n++) {
