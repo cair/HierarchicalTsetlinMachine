@@ -1,6 +1,26 @@
 # HierarchicalTsetlinMachine
 Tsetlin machine-based learning of AND-OR hierarchies
 
+## Tsetlin Machine and AGI
+
+### Bridging Reactive and Reflective Thinking
+
+### An Eight-Year Research Agenda
+
+## The Noisy Parity Problem
+
+## Vanilla Tsetlin Machine Solution to the Noisy Parity Problem
+
+## Learning AND-OR Hierarchies With Nested Clauses
+
+### Hierarchical Clause Structure
+
+### Inference in Hierarchies
+
+### Learning in Hierarchies
+
+### Further Work
+
 ## Licence
 MIT License
 
