@@ -21,6 +21,10 @@ Tsetlin machine-based learning of AND-OR hierarchies
 
 ### Further Work
 
+### Paper
+
+_A Tsetlin Machine for Logical Learning and Reasoning With AND-OR Hierarchies_. Ole-Christoffer Granmo, et al., 2026. (Forthcoming)
+
 ## Licence
 MIT License
 
