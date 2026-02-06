@@ -69,7 +69,7 @@ The methods introduced in this repository aims to address challenge C1 above. By
 ### Clauses
 
 <p align="center">
-  <img width="80%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Clauses.png">
+  <img width="60%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Vanilla_Tsetlin_Machine_Clauses.png">
 </p>
 
 ## Learning AND-OR Hierarchies With Nested Clauses
