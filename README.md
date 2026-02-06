@@ -162,7 +162,7 @@ A clause component is updated exactly as a standard clause, apart from a few cru
 **Type II Feedback (Other Classes)**
 
 <p align="center">
-  <img width="70%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_I_Feedback.png">
+  <img width="70%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_Type_II_Feedback.png">
 </p>
 
 1. Record truth value of all AND-sub-expressions from leaf (**clause component**) to root (**clause**)
