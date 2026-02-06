@@ -107,8 +107,10 @@ The methods introduced in this repository aims to address challenge C1 above. By
 #### OR-structure for Organizing Alternatives
 
 <p align="center">
-  <img width="40%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_OR_Structure.png">
+  <img width="30%" src="https://github.com/cair/HierarchicalTsetlinMachine/blob/main/figures/Hierarchical_Tsetlin_Machine_OR_Structure.png">
 </p>
+
+#### AND-structure for combining feature groups
 
 ### Inference in Hierarchies
 
