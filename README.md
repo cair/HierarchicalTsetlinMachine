@@ -208,7 +208,7 @@ Average accuracy: 0.994970
 
 ### Paper
 
-_A Tsetlin Machine for Logical Learning and Reasoning With AND-OR Hierarchies_. Ole-Christoffer Granmo, et al., 2026. (Forthcoming)
+_A Tsetlin Machine for Logical Learning and Reasoning With AND-OR Hierarchies_. Ole-Christoffer Granmo, Youmna Abdelwahab, Linga Reddy Cenkeramaddi, Paul F. A. Clarke, Kunal Dumbre, Ylva Grønninsæter, Vojtech Halenka, Runar Helin, Lei Jiao, Ahmed Khalid, Rebekka Omslandseter, Linga Reddy, Rupsa Saha, Mayur Shende, and Xuan Zhang, 2026. (Forthcoming)
 
 ## Licence
 MIT License
