@@ -56,7 +56,7 @@ void tm_initialize(struct TsetlinMachine *tm)
 					for (int m = 0; m < LEAF_ALTERNATIVES; m++) {
 						for (int n = 0; n < LEAF_FACTORS; n++) {
 
-							if (1.0 * rand()/RAND_MAX <= 0.5) {
+							if (tm_rng_uniform01() <= 0.5) {
 								(*tm).ta_state[i][j][k][l][m][n] = NUMBER_OF_STATES;
 								(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] = NUMBER_OF_STATES + 1;
 							} else {
@@ -80,7 +80,57 @@ static inline int action(int state)
 /* Calculate the output of each clause using the actions of each Tsetline Automaton. */
 /* Output is stored an internal output array. */
 
-static inline void calculate_clause_output(struct TsetlinMachine *tm, int Xi[], int predict)
+/* Scoring path: same vote arithmetic as update, without writing clause_component_output etc. */
+static inline void calculate_clause_output_predict(struct TsetlinMachine *tm, int Xi[])
+{
+	int action_include;
+
+	for (int i = 0; i < CLAUSES; i++) {
+		(*tm).clause_output[i] = 1;
+
+		for (int j = 0; j < ROOT_FACTORS; j++) {
+			int interior_vote_sum_j = 0;
+
+			for (int k = 0; k < INTERIOR_ALTERNATIVES; k++) {
+				int interior_vote_product = 1;
+
+				for (int l = 0; l < INTERIOR_FACTORS; l++) {
+					int leaf_vote_sum = 0;
+
+					for (int m = 0; m < LEAF_ALTERNATIVES; m++) {
+						int clause_component_output = 1;
+
+						for (int n = 0; n < LEAF_FACTORS; n++) {
+							int feature = j * INTERIOR_FACTORS * LEAF_FACTORS + l * LEAF_FACTORS + n;
+
+							action_include = action((*tm).ta_state[i][j][k][l][m][n]);
+							if ((action_include == 1 && Xi[feature] == 0)) {
+								clause_component_output = 0;
+								break;
+							}
+
+							action_include = action((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS]);
+							if ((action_include == 1 && Xi[feature + FEATURES] == 0)) {
+								clause_component_output = 0;
+								break;
+							}
+						}
+
+						leaf_vote_sum += clause_component_output;
+					}
+
+					interior_vote_product *= leaf_vote_sum;
+				}
+
+				interior_vote_sum_j += interior_vote_product;
+			}
+
+			(*tm).clause_output[i] *= interior_vote_sum_j;
+		}
+	}
+}
+
+static inline void calculate_clause_output_update(struct TsetlinMachine *tm, int Xi[])
 {
 	int action_include;
 
@@ -138,6 +188,15 @@ static inline void calculate_clause_output(struct TsetlinMachine *tm, int Xi[], 
 	}
 }
 
+static inline void calculate_clause_output(struct TsetlinMachine *tm, int Xi[], int predict)
+{
+	if (predict == PREDICT) {
+		calculate_clause_output_predict(tm, Xi);
+	} else {
+		calculate_clause_output_update(tm, Xi);
+	}
+}
+
 /* Sum up the votes for each class (this is the multiclass version of the Tsetlin Machine) */
 static inline int sum_up_class_votes(struct TsetlinMachine *tm)
 {
@@ -167,24 +226,24 @@ static inline void type_i_feedback(struct TsetlinMachine *tm, int Xi[], int i, i
 {
 	if ((*tm).clause_output[i] == 0 || (*tm).interior_vote_products[i][j][k] == 0 || (*tm).clause_component_output[i][j][k][l][m] == 0)	{
 		for (int n = 0; n < LEAF_FACTORS; n++) {
-			(*tm).ta_state[i][j][k][l][m][n] -= ((*tm).ta_state[i][j][k][l][m][n] > 1) && (1.0*rand()/RAND_MAX <= 1.0/s);	
+			(*tm).ta_state[i][j][k][l][m][n] -= ((*tm).ta_state[i][j][k][l][m][n] > 1) && (tm_rng_uniform01() <= 1.0/s);	
 
-			(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] -= ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] > 1) && (1.0*rand()/RAND_MAX <= 1.0/s);				
+			(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] -= ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] > 1) && (tm_rng_uniform01() <= 1.0/s);				
 		}
 	} else {
 		int feature_index = j * INTERIOR_FACTORS * LEAF_FACTORS + l * LEAF_FACTORS;
 
 		for (int n = 0; n < LEAF_FACTORS; n++) {
 			if (Xi[feature_index + n] == 1) {
-				(*tm).ta_state[i][j][k][l][m][n] += ((*tm).ta_state[i][j][k][l][m][n] < NUMBER_OF_STATES*2) && (BOOST_TRUE_POSITIVE_FEEDBACK == 1 || 1.0*rand()/RAND_MAX <= (s-1)/s);
+				(*tm).ta_state[i][j][k][l][m][n] += ((*tm).ta_state[i][j][k][l][m][n] < NUMBER_OF_STATES*2) && (BOOST_TRUE_POSITIVE_FEEDBACK == 1 || tm_rng_uniform01() <= (s-1)/s);
 			} else {				
-				(*tm).ta_state[i][j][k][l][m][n] -= ((*tm).ta_state[i][j][k][l][m][n] > 1) && (1.0*rand()/RAND_MAX <= 1.0/s);
+				(*tm).ta_state[i][j][k][l][m][n] -= ((*tm).ta_state[i][j][k][l][m][n] > 1) && (tm_rng_uniform01() <= 1.0/s);
 			}
 
 			if (Xi[feature_index + n + FEATURES] == 1) {
-				(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] += ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] < NUMBER_OF_STATES*2) && (BOOST_TRUE_POSITIVE_FEEDBACK == 1 || 1.0*rand()/RAND_MAX <= (s-1)/s);
+				(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] += ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] < NUMBER_OF_STATES*2) && (BOOST_TRUE_POSITIVE_FEEDBACK == 1 || tm_rng_uniform01() <= (s-1)/s);
 			} else {				
-				(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] -= ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] > 1) && (1.0*rand()/RAND_MAX <= 1.0/s);
+				(*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] -= ((*tm).ta_state[i][j][k][l][m][n + LEAF_FACTORS] > 1) && (tm_rng_uniform01() <= 1.0/s);
 			}
 		}
 	}
@@ -244,7 +303,7 @@ void tm_update(struct TsetlinMachine *tm, int Xi[], int target, float s) {
 			for (int k = 0; k < INTERIOR_ALTERNATIVES; k++) {
 				for (int l = 0; l < INTERIOR_FACTORS; l++) {
 					for (int m = 0; m < LEAF_ALTERNATIVES; m++) {
-						(*tm).feedback_to_components[i][j][k][l][m] = sign*(2*target-1)*(1.0*rand()/RAND_MAX <= (1.0/(THRESHOLD*2))*(THRESHOLD + (1 - 2*target)*class_sum));
+						(*tm).feedback_to_components[i][j][k][l][m] = sign*(2*target-1)*(tm_rng_uniform01() <= (1.0/(THRESHOLD*2))*(THRESHOLD + (1 - 2*target)*class_sum));
 					}
 				}
 			}
@@ -285,5 +344,4 @@ int tm_score(struct TsetlinMachine *tm, int Xi[]) {
 
 	return sum_up_class_votes(tm);
 }
-
 

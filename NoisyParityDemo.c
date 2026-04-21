@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <time.h>
 #include <string.h>
 
@@ -39,7 +40,8 @@ void read_file(void)
 		}
 		y_train[i] = atoi(token);
 	}
-
+	fclose(fp);
+	
 	fp = fopen("NoisyParityTestingData.txt", "r");
 	if (fp == NULL) {
 		printf("Error opening\n");
@@ -58,12 +60,15 @@ void read_file(void)
 		}
 		y_test[i] = atoi(token);
 	}
+	fclose(fp);
+	free(line);
 }
 
 
 int main(void)
 {	
 	srand(time(NULL));
+	tm_rng_seed((uint64_t)time(NULL) ^ ((uint64_t)clock() << 32));
 
 	read_file();
 

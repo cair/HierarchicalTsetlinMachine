@@ -101,10 +101,13 @@ void mc_tm_update(struct MultiClassTsetlinMachine *mc_tm, int Xi[], int target_c
 	tm_update(mc_tm->tsetlin_machines[target_class], Xi, 1, s);
 
 	// Randomly pick one of the other classes, for pairwise learning of class output 
-	unsigned int negative_target_class = (unsigned int)CLASSES * 1.0*rand()/((unsigned int)RAND_MAX+1);
-	while (negative_target_class == target_class) {
-		negative_target_class = (unsigned int)CLASSES * 1.0*rand()/((unsigned int)RAND_MAX+1);
-	}
+	unsigned int negative_target_class;
+	do {
+		negative_target_class = (unsigned int)(tm_rng_uniform01() * (double)CLASSES);
+		if (negative_target_class >= (unsigned int)CLASSES) {	// Clamp, because float scaling
+			negative_target_class = (unsigned int)CLASSES - 1U; 
+		}
+	} while (negative_target_class == (unsigned int)target_class);
 
 	tm_update(mc_tm->tsetlin_machines[negative_target_class], Xi, 0, s);
 }

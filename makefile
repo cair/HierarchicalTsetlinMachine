@@ -1,5 +1,11 @@
-NoisyParityDemo: MultiClassTsetlinMachine.c MultiClassTsetlinMachine.h TsetlinMachine.c TsetlinMachine.h NoisyParityDemo.c
-	gcc -Wall -O3 -ffast-math -o NoisyParityDemo NoisyParityDemo.c MultiClassTsetlinMachine.c TsetlinMachine.c 
+SOURCES = NoisyParityDemo.c MultiClassTsetlinMachine.c TsetlinMachine.c tm_random.c
+HEADERS = MultiClassTsetlinMachine.h TsetlinMachine.h
+
+CC ?= gcc
+CFLAGS_COMMON = -Wall -O3 -ffast-math -march=native -flto
+
+NoisyParityDemo: $(SOURCES) $(HEADERS)
+	$(CC) $(CFLAGS_COMMON) -o NoisyParityDemo $(SOURCES)
 
 clean:
-	rm *.o NoisyParityDemo
+	rm -f NoisyParityDemo

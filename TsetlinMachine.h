@@ -44,6 +44,12 @@ https://arxiv.org/abs/1804.01508
 #define PREDICT 1
 #define UPDATE 0
 
+#include <stdint.h>
+
+void tm_rng_seed(uint64_t seed);
+double tm_rng_uniform01(void);
+
+
 struct TsetlinMachine {
 	int ta_state[CLAUSES][ROOT_FACTORS][INTERIOR_ALTERNATIVES][INTERIOR_FACTORS][LEAF_ALTERNATIVES][LITERALS_PER_GROUP]; // The clause components, unique per clause (later we can introduce sharing)
 	int leaf_vote_sum[CLAUSES][ROOT_FACTORS][INTERIOR_ALTERNATIVES][INTERIOR_FACTORS]; // Stores how many class votes you get per feature group (vote summation over leaf alternatives)
