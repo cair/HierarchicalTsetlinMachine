@@ -6,7 +6,7 @@ def default_args(**kwargs):
 	parser.add_argument("--number-of-examples", default=10000, type=int)
 	parser.add_argument("--number-of-copies", default=1, type=int)
 	parser.add_argument("--number-of-elements", default=2, type=int)
-	parser.add_argument("--noise", default=0.0, type=float)
+	parser.add_argument("--noise", default=0.1, type=float)
 	args = parser.parse_args()
 	for key, value in kwargs.items():
 		if key in args.__dict__:
