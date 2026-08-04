@@ -25,13 +25,13 @@ https://arxiv.org/abs/1804.01508
 
 */
 
-#define THRESHOLD 128
+#define THRESHOLD 256
 #define LEAF_FACTORS 32
 #define INTERIOR_FACTORS 2
 #define ROOT_FACTORS 1
 #define LEAF_ALTERNATIVES 64
 #define INTERIOR_ALTERNATIVES 1
-#define CLAUSES 2
+#define CLAUSES 4
 
 #define LITERALS_PER_GROUP (LEAF_FACTORS)
 
@@ -67,3 +67,5 @@ void tm_update(struct TsetlinMachine *tm, int Xi[], int target, float s);
 int tm_score(struct TsetlinMachine *tm, int Xi[]);
 
 int tm_get_state(struct TsetlinMachine *tm, int clause, int root_factor, int interior_alternative, int interior_factor, int leaf_alternative, int leaf_factor);
+
+int tm_get_action(struct TsetlinMachine *tm, int clause, int root_factor, int interior_alternative, int interior_factor, int leaf_alternative, int leaf_factor);

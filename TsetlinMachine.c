@@ -151,6 +151,13 @@ int tm_get_state(struct TsetlinMachine *tm, int clause, int root_factor, int int
 	return (*tm).ta_state[clause][root_factor][interior_alternative][interior_factor][leaf_alternative][leaf_factor];
 }
 
+/* Get the state of a specific automaton, indexed by clause, feature, and automaton type (include/include negated). */
+int tm_get_action(struct TsetlinMachine *tm, int clause, int root_factor, int interior_alternative, int interior_factor, int leaf_alternative, int leaf_factor)
+{
+	return (*tm).ta_state[clause][root_factor][interior_alternative][interior_factor][leaf_alternative][leaf_factor] > NUMBER_OF_STATES;
+}
+
+
 /*************************************************/
 /*** Type I Feedback (Combats False Negatives) ***/
 /*************************************************/
